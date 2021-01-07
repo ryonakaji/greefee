@@ -261,6 +261,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .introducetitle {
@@ -278,13 +279,19 @@ body {
     float: left;
 }
 
-.introduceul ul{
+.introduceul {
     list-style: none;
 }
 
+.introduceul ul{
+    list-style: none;
+    text-align: center;
+}
+
 .introduceul ul li{
-    margin: 10px;
+    margin: 10px auto;
     padding: 20px;
+    text-align: center;
 }
 
 .introduceli {
