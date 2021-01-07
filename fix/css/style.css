@@ -1,7 +1,7 @@
 body {
     background-image: url("./../img/bg.png");
     margin: 0;
-   padding: 0;
+    padding: 0;
 }
 
 .mv {
@@ -22,6 +22,51 @@ body {
     padding: 0;
     display:flex;
 }*/
+
+.tel {
+    color: rgb(255, 255, 255);
+    background-color: rgb(72, 145, 50);
+    height: 30px;
+    margin-left: auto;
+    display:inline-block;
+}
+
+.telicon {
+    height: 20px;
+    width: auto;
+    float: left;
+    margin: 10px, 0, 20px, 0;
+    padding: 0;
+}
+
+.telnum {
+    height: 4px;
+    width: auto;
+    font-size: 3px;
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+    -webkit-transform:scale(0.7);
+    -moz-transform:scale(0.7);
+    -ms-transform:scale(0.7);
+    -o-transform:scale(0.7);
+    transform:scale(0.7);
+
+}
+
+.telc {
+    height: 3px;
+    width: auto;
+    font-size: 1px;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    -webkit-transform:scale(0.5);
+    -moz-transform:scale(0.5);
+    -ms-transform:scale(0.5);
+    -o-transform:scale(0.5);
+    transform:scale(0.5);
+}
 
 .telimg {
     height: 30px;
@@ -90,6 +135,36 @@ body {
     padding: 0;
 }
 
+.shikinrelative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*.mv_img {
+    width: 55%;
+    height: auto;
+}*/
+
+.shikinabsolute {
+    font-size: 20px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 55%;
+    height: 100%;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+.shikintext {
+    font-size: 10px
+}
+
 .infoabsolute {
     /*position: absolute;
     left: 50px;
@@ -103,6 +178,7 @@ body {
     right: 0px;
     top: 0px;
 }
+
 
 .textabsolute {
     position: absolute;
@@ -123,25 +199,156 @@ body {
 }
 
 .plan {
-    background-image: url("./../img/plan_bg.png");
+    background-image: url("./../img/plan_bg_0107.png");
+    background-size: cover;
     margin: 0;
     padding: 0;
+    height: 250px;
     text-align: center;
 }
 
+.planlist {
+    width: 80%;
+    margin: 0px auto;
+}
+
 .plantitle {
-    margin: 20px auto;
+    margin: 0px auto;
+    padding: 20px 0; 
     width: 15%;
     height: auto;
     border-style:none;
+}
+
+.plantitle1 {
+    margin: 40px 0, 0;
+    padding: 0;
+    color: rgb(255, 255, 0);
+    font-family: "Utopia Std";
+}
+
+.plantitle2 {
+    color: rgb(255, 255, 255);
+    font-family: "Ten Mincho Text";
+}
+
+.voicetitle1 {
+    margin: 40px 0 0 0;
+    color: rgb(255, 210, 53);
+    font-family: "Utopia Std";
+}
+
+.voicetitle2 {
+    color: rgb(255, 255, 255);
+    font-family: "Ten Mincho Text";
+}
+
+.flowtitle1 {
+    margin: 40px 0, 0;
+    padding: 0;
+    color: rgb(89, 151, 17);
+    font-family: "Utopia Std";
+}
+
+.flowtitle2 {
+    color: rgb(89, 151, 17);
+    font-family: "Ten Mincho Text";
+}
+
+
+.introduce {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.introducetitle {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 55%;
+    height: 100%;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: "Ten Mincho Text";
+    color: rgb(89, 151, 17);
+    float: left;
+}
+
+.introduceul ul{
+    list-style: none;
+}
+
+.introduceul ul li{
+    margin: 10px;
+    padding: 20px;
+}
+
+.introduceli {
+    padding: 20px 0px;
+    float: left;
+    width: 240px;
+    font-family: "Utopia Std";
+    color: rgb(129, 188, 50);
+  font-size:20px;
+}
+
+.introduceimg {
+    padding: 0 0 0 50px;
+    width:240px;
+}
+
+.introduceruby {
+  font-size:15px;
+  font-family: "Ten Mincho Text";
+   color: rgb(89, 151, 17);
+}
+
+.introducetext {
+  font-family: "YuGothic";
+  color: rgb(46, 46, 46);
+  font-size:10px;
+    -webkit-transform:scale(0.5);
+    -moz-transform:scale(0.5);
+    -ms-transform:scale(0.5);
+    -o-transform:scale(0.5);
+    transform:scale(0.5);
+}
+
+.greengb {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.napoleon {
+    width: 80%;
+    height: 25%;
+    margin: 0;
+    padding: 0;
+}
+.hibititle1 {
+    font-size: 20px;
+    font-family: "Ten Mincho Text";
+    margin: 10px 0;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
 }
 
 .planul {
     display: flex;
     flex-wrap:wrap;
     list-style: none;
-    margin: 0;
+    margin: 0; 
     padding: 0;
+    text-align: center;
 }
 
 .planul li {
@@ -247,7 +454,8 @@ body {
 }
 
 .flowtitle {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
     width: 15%;
     height: auto;
 }
@@ -274,6 +482,7 @@ body {
 .voice {
   background-image: url("./../img/voice_bg.png");
   text-align: center;
+  padding: 20px 0 0 0;
 }
 
 .voicetitle {
@@ -315,3 +524,4 @@ footer {
     margin: 0;
     padding: 0;
 }
+
