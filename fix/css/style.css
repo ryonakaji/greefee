@@ -1,8 +1,11 @@
+/* PC用 */
 @media screen and (min-width: 721px) {
     html {
         font-size: 75%;
     }
 }
+
+/* スマホなどの画面サイズが小さい */
 @media screen and (max-width: 720px) {
     html {
         font-size: 50%;
@@ -15,6 +18,7 @@ body {
     padding: 0;
 }
 
+/*mv class*/
 .mv {
     margin: 0;
     padding: 0;
@@ -102,13 +106,6 @@ body {
     width: auto;
 }
 
-.imgwidth {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .mvrelative {
     position: relative;
     width: 100%;
@@ -128,30 +125,13 @@ body {
     padding: 0;
 }
 
-.shikinrelative {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.shikinabsolute {
-    font-size: 1.5rem;
+.mvtextabsolute {
     position: absolute;
-    left: 15%;
-    top: 25%;
-    width: 30%;
-    height: 80%;
-    z-index: 1000;
-    margin: 0;
-    padding: 0;
-    color: rgb(255, 255, 255);
-    font-size  = calc(ZZ + ((1vw - XX) * YY))
-}
-
-.shikintext {
-    font-size:0.5rem
+    left: 2.5rem;
+    top: 5.5rem;
+    width: 45%;
+    height: auto;
+    z-index: 200;
 }
 
 .infoabsolute {
@@ -168,15 +148,6 @@ body {
     top: 0px;
 }
 
-.mvtextabsolute {
-    position: absolute;
-    left: 2.5rem;
-    top: 5.5rem;
-    width: 45%;
-    height: auto;
-    z-index: 200;
-}
-
 .logoabsolute {
     position: absolute;
     left: 30px;
@@ -186,6 +157,7 @@ body {
     z-index: 200;
 }
 
+/*plan class*/
 .plan {
     background-image: url("./../img/plan_bg.png");
     background-size: cover;
@@ -220,29 +192,55 @@ body {
     font-family: "Ten Mincho Text";
 }
 
-.voice_text1 {
-    margin: 40px 0 0 0;
-    color: rgb(255, 210, 53);
-    font-family: "Utopia Std";
-}
-
-.voice_text2 {
-    color: rgb(255, 255, 255);
-    font-family: "Ten Mincho Text";
-}
-
-.flow_text1 {
-    margin: 40px 0, 0;
+.planul {
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+    margin: 0; 
     padding: 0;
-    color: rgb(89, 151, 17);
-    font-family: "Utopia Std";
+    text-align: center;
 }
 
-.flow_text2 {
-    color: rgb(89, 151, 17);
-    font-family: "Ten Mincho Text";
+.planul li {
+    width: calc(100%/5);/*←画像を横に4つ並べる場合*/
+    padding:0 5px;/*←画像の左右に5pxの余白を入れる場合*/
+    box-sizing:border-box;
+}
+.planul li img {
+    max-width:100%; /*画像のはみだしを防ぐ*/
+    height: auto; /*画像の縦横比を維持 */
+    border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
 }
 
+/*shikin class*/
+.shikinrelative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.shikinabsolute {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 30%;
+    height: 80%;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size  = calc(ZZ + ((1vw - XX) * YY))
+}
+
+.shikintext {
+    font-size:0.5rem
+}
+
+
+/*introduce class*/
 .introduce {
     position: relative;
     width: 100%;
@@ -324,56 +322,26 @@ body {
     transform:scale(0.5);
 }
 
-/*
-.greegbb {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 10%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-*/
-
 .napoleon {
     width: 75%;
     height: 25%;
     margin: 0;
     padding: 0;
 }
+
+/*hibi class*/
+.hibi {
+    background-image: url("./../img/hibi_bg.png");
+    background-size: cover;
+    text-align: center;
+}
+
 .hibi_title_text {
     font-size: 1.7rem;
     font-family: "Ten Mincho Text";
     margin: 2rem 0 0 0;
     padding: 0;
     color: rgb(255, 255, 255);
-}
-
-.planul {
-    display: flex;
-    flex-wrap:wrap;
-    list-style: none;
-    margin: 0; 
-    padding: 0;
-    text-align: center;
-}
-
-.planul li {
-    width: calc(100%/5);/*←画像を横に4つ並べる場合*/
-    padding:0 5px;/*←画像の左右に5pxの余白を入れる場合*/
-    box-sizing:border-box;
-}
-.planul li img {
-    max-width:100%; /*画像のはみだしを防ぐ*/
-    height: auto; /*画像の縦横比を維持 */
-    border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
-}
-
-.hibi {
-    background-image: url("./../img/hibi_bg.png");
-    background-size: cover;
-    text-align: center;
 }
 
 .hibititle {
@@ -428,21 +396,6 @@ body {
     z-index: 23;*/
 }
 
-.hibi_text3 {
-    font-size: 0.5rem;
-    font-family: "YuGothic";
-    color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-    /*line-height: 1.5;*/
-    text-align: center;
-  /*  left: 1050.449px;
-    top: 5008.016px;
-    width: 548px;
-    height: 62px;
-    z-index: 22;*/
-}
-
 .hibi_text2 {
     font-size: 20%;
     font-family: "Source Han Sans JP";
@@ -458,6 +411,22 @@ body {
     z-index: 21;*/
 }
 
+.hibi_text3 {
+    font-size: 0.5rem;
+    font-family: "YuGothic";
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    /*line-height: 1.5;*/
+    text-align: center;
+  /*  left: 1050.449px;
+    top: 5008.016px;
+    width: 548px;
+    height: 62px;
+    z-index: 22;*/
+}
+
+/*flow class*/
 .flow {
     /*background-image: url("./../img/voice_bg.png")*/;
     text-align: center;
@@ -490,6 +459,19 @@ body {
     border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
 }
 
+.flow_text1 {
+    margin: 40px 0, 0;
+    padding: 0;
+    color: rgb(89, 151, 17);
+    font-family: "Utopia Std";
+}
+
+.flow_text2 {
+    color: rgb(89, 151, 17);
+    font-family: "Ten Mincho Text";
+}
+
+/*voice class*/
 .voice {
   background-image: url("./../img/voice_bg.png");
   text-align: center;
@@ -521,6 +503,30 @@ body {
     border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
 }
 
+.voice_text1 {
+    margin: 40px 0 0 0;
+    color: rgb(255, 210, 53);
+    font-family: "Utopia Std";
+}
+
+.voice_text2 {
+    color: rgb(255, 255, 255);
+    font-family: "Ten Mincho Text";
+}
+
+/*
+.greegbb {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+/*footer*/
 footer {
     text-align: center;
     font-size: 50%;
@@ -536,6 +542,14 @@ footer {
     padding: 0;
 }
 
+.imgwidth {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* レスポンシブ用 */
 @media screen and (max-width: 720px) {
     .shikinabsolute {
         font-size: 1rem;
