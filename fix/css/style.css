@@ -8,9 +8,6 @@
         font-size: 50%;
     }
 }
-/*html {
-  font-size: 12.5%;
-}*/
 
 body {
     background-image: url("./../img/bg.png");
@@ -21,21 +18,25 @@ body {
 .mv {
     margin: 0;
     padding: 0;
-/*    background-image: url("./../img/pixta_58820100_M.png");
+    /*
+    background-image: url("./../img/pixta_58820100_M.png");
     height: auto;
     width: auto;
     background-size: 100%;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    */
 }
 
-/*.info {
+/*
+.info {
     position: absolute;
     right: 0px;
     top: 0px;
     margin:0;
     padding: 0;
     display:flex;
-}*/
+}
+*/
 
 .tel {
     color: rgb(255, 255, 255);
@@ -65,7 +66,6 @@ body {
     -ms-transform:scale(0.7);
     -o-transform:scale(0.7);
     transform:scale(0.7);
-
 }
 
 .telc {
@@ -174,30 +174,12 @@ body {
     padding: 0;
     color: rgb(255, 255, 255);
     font-size  = calc(ZZ + ((1vw - XX) * YY))
-
-}
-
-@media screen and (max-width: 720px) {
-.shikinabsolute {
-    font-size: 1rem;
-    position: absolute;
-    left: 15%;
-    top: 15%;
-    width: 30%;
-    height: 80%;
-    z-index: 1000;
-    margin: 0;
-    padding: 0;
-    color: rgb(255, 255, 255);
-    font-size  = calc(ZZ + ((1vw - XX) * YY))
-
 }
 
 /*.shikintext {
     font-size:0.5rem
 }*/
 
-}
 .shikintext {
     font-size:0.5rem
 }
@@ -215,7 +197,6 @@ body {
     right: 0px;
     top: 0px;
 }
-
 
 .textabsolute {
     position: absolute;
@@ -236,7 +217,7 @@ body {
 }
 
 .plan {
-    background-image: url("./../img/plan_bg_0107.png");
+    background-image: url("./../img/plan_bg.png");
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -292,7 +273,6 @@ body {
     font-family: "Ten Mincho Text";
 }
 
-
 .introduce {
     position: relative;
     width: 100%;
@@ -338,19 +318,6 @@ body {
 
 .introduceul ul li{
     margin: 1rem;
-}
-
-@media screen and (max-width: 720px) {
-    .introduceul ul li{
-        text-align: center;
-            margin-left: auto;
-    margin-right: auto;
-    }
-    .introduceli {
-        text-align: center;
-        margin: 2rem auto;
-        padding: 2rem auto;
-    }
 }
 
 .introduceli {
@@ -432,7 +399,7 @@ body {
 }
 
 .hibi {
-    background-image: url("./../img/bbb.png");
+    background-image: url("./../img/hibi_bg.png");
     background-size: cover;
     text-align: center;
 }
@@ -598,11 +565,36 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
-.flowul {
-    width: 80%;
-}
+    .shikinabsolute {
+        font-size: 1rem;
+        position: absolute;
+        left: 15%;
+        top: 15%;
+        width: 30%;
+        height: 80%;
+        z-index: 1000;
+        margin: 0;
+        padding: 0;
+        color: rgb(255, 255, 255);
+        font-size  = calc(ZZ + ((1vw - XX) * YY))
+    
+    }
+    .flowul {
+        width: 80%;
+    }
+    
+    .voiceul {
+        width: 80%;
+    }
 
-.voiceul {
-    width: 80%;
-}
+    .introduceul ul li{
+        text-align: center;
+            margin-left: auto;
+    margin-right: auto;
+    }
+    .introduceli {
+        text-align: center;
+        margin: 2rem auto;
+        padding: 2rem auto;
+    }
 }
