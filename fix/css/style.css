@@ -164,13 +164,78 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 25rem;
+    height: 30rem;
     text-align: center;
 }
 
 .planlist {
     width: 80%;
     margin: 0px auto;
+}
+
+.plan__list {
+}
+
+.list__item {
+    background-color: white;
+    /*width: 12rem;*/
+    height: 20rem;
+    margin: 1rem;
+    /*width: 20rem;*/
+    width: calc(100%/6);/*←画像を横に4つ並べる場合*/
+    padding:0;/*←画像の左右に5pxの余白を入れる場合*/
+    box-sizing:border-box;
+    float: left;
+    position: relative;
+}
+
+.plan__img {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.item__img {
+    /*width: calc(100%/6);*//*←画像を横に4つ並べる場合*/
+}
+
+.item__txt ul{
+    padding: 0;
+}
+
+.item__txt ul li{
+    list-style: none;
+    left: 0;
+    text-align: left;
+    width: 14rem;
+    border-bottom: 0.5px solid rgb(230, 230, 230);;
+    padding-bottom: 2px;
+    margin: 0 0 1rem 1rem;
+}
+
+.item__txt ul li p {
+}
+
+.ttl {
+    height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 0 0 1rem;
+    margin:4rem 0;
+    font-family: "Source Han Serif";
+    color: rgb(0, 0, 0);
+
+}
+
+.money {
+    height: 2rem;
+    font-size: 1rem;
+    margin:0;
+    text-align: right;
+    font-family: "Source Han Serif";
+    color: rgb(230, 10, 51);
+    position: absolute;
+    right: 4rem;
 }
 
 .plantitle {
