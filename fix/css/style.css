@@ -16,6 +16,7 @@ body {
     background-image: url("./../img/bg.png");
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 /*mv class*/
@@ -163,7 +164,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 20rem;
+    height: 25rem;
     text-align: center;
 }
 
@@ -178,6 +179,7 @@ body {
     width: 20rem;
     height: auto;
     border-style:none;
+    font-size: 1.2rem;
 }
 
 .plan_text1 {
@@ -251,13 +253,13 @@ body {
 .introducetitle {
     position: absolute;
     left: 3rem;
-    top: 1rem;
+    top: 3rem;
     width: 55%;
     height: 4rem;
     z-index: 100;
     margin: 0;
     padding: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "Ten Mincho Text";
     color: rgb(89, 151, 17);
     float: left;
@@ -280,28 +282,33 @@ body {
     padding: 0;
 }
 
-.introduceul ul{
-    list-style: none;
-}
-
-.introduceul ul li{
-    margin: 1rem;
-}
-
 .introduceli {
     padding: 1rem 0 1rem 0;
-    margin: 0;
+    margin: 1rem 0 1rem 12rem;
     float: left;
-    width: 20rem;
+    width: 25rem;
     font-family: "Utopia Std";
     color: rgb(129, 188, 50);
     font-size:2rem;
 }
 
+.introduceul ul{
+    list-style: none;
+    width: 90%;
+}
+
+.introduceul ul li{
+    margin: 2rem;
+}
+
+/*.introduceul ul li{
+    margin: 1rem;
+}*/
+
 .introduceimg {
     padding: 0;
     margin: 0;
-    width:25rem;
+    width:35rem;
     z-index: 1000;
 }
 
@@ -430,13 +437,18 @@ body {
 .flow {
     /*background-image: url("./../img/voice_bg.png")*/;
     text-align: center;
+    padding: 2rem 0;
 }
 
 .flowtitle {
-    margin: 0 0 1.7rem 0;
+/*    margin: 0 0 1.7rem 0;
     padding: 0 0 1.7rem 0;
     width: 15%;
+    height: auto;*/
+    margin: 0 auto 2rem auto;
+    width: 20%;
     height: auto;
+    font-size: 1.2rem;
 }
 
 .flowul {
@@ -475,20 +487,22 @@ body {
 .voice {
   background-image: url("./../img/voice_bg.png");
   text-align: center;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0;
 }
 
 .voicetitle {
-    margin: 20px auto;
-    width: 10%;
+    margin: 0 auto 2rem auto;
+    width: 20%;
     height: auto;
+    font-size: 1.2rem;
 }
 
 .voiceul {
     display: flex;
     flex-wrap:wrap;
     list-style: none;
-    width: 90%;
+    width: 80%;
+    margin: 1rem 0 1rem 5rem;
 }
 
 .voiceul li {
@@ -549,6 +563,11 @@ footer {
     padding: 0;
 }
 
+.spacerm {
+    margin: 0;
+    padding: 0;
+}
+
 /* レスポンシブ用 */
 @media screen and (max-width: 720px) {
     .shikinabsolute {
@@ -571,16 +590,33 @@ footer {
     
     .voiceul {
         width: 80%;
+        margin: 0;
     }
 
     .introduceul ul li{
         text-align: center;
-            margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .introduceli {
         text-align: center;
         margin: 2rem auto;
         padding: 2rem auto;
+    }
+
+    .introducetitle {
+        position: absolute;
+        left: 3rem;
+        top: 1rem;
+        width: 55%;
+        height: 4rem;
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        font-family: "Ten Mincho Text";
+        color: rgb(89, 151, 17);
+        float: left;
     }
 }
