@@ -19,6 +19,56 @@ body {
     width: 100%;
 }
 
+h2{
+position: relative;
+display: inline-block;
+padding: 0 45px;
+    margin: 40px 0, 0;
+    color: rgb(255, 255, 0);
+    font-family: "Utopia Std";
+}
+
+h2 flow_title {
+    flow color: rgb(89, 151, 17);
+}
+
+h2 voice_title {
+    voice color: rgb(255, 210, 53);
+}
+
+h2:after{
+content: '';
+position: absolute;
+top: 50%;
+display: inline-block;
+width: 44px;
+height: 2px;
+    background-color: rgb(255, 255, 0);
+    font-family: "Utopia Std";
+-moz-transform: rotate(-60deg);
+-webkit-transform: rotate(-60deg);
+-ms-transform: rotate(-60deg);
+transform: rotate(-60deg);
+}
+
+h2:before{
+content: '';
+position: absolute;
+top: 50%;
+display: inline-block;
+width: 44px;
+height: 2px;
+    background-color: rgb(255, 255, 0);
+    font-family: "Utopia Std";
+-moz-transform: rotate(60deg);
+-webkit-transform: rotate(60deg);
+-ms-transform: rotate(60deg);
+transform: rotate(60deg);
+}
+
+h2:before {left:0;}
+h2:after {right: 0;}
+
 /*mv class*/
 .mv {
     margin: 0;
