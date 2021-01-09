@@ -77,6 +77,7 @@ h2:after {right: 0;}
 .mv {
     margin: 0;
     padding: 0;
+    height: auto;
     /*
     background-image: url("./../img/pixta_58820100_M.png");
     height: auto;
@@ -267,8 +268,10 @@ h2:after {right: 0;}
 
 .mvtextabsolute {
     position: absolute;
-    left: 2.5rem;
-    top: 12rem;
+    /*left: 4rem;
+    top: 14rem;*/
+    left: 5%;
+    top: 20%;
     width: 45%;
     height: auto;
     z-index: 200;
@@ -291,6 +294,7 @@ h2:after {right: 0;}
     z-index: 200;
     width: 10rem;
   font-size: 2rem;
+  /*font-size: 2rem;*/
 }
 .mvtext2 {
   font-family: "Refrigerator Deluxe";
@@ -343,8 +347,8 @@ h2:after {right: 0;}
 
 .logoabsolute {
     position: absolute;
-    left: 30px;
-    top: 30px;
+    left: 4rem;
+    top: 4rem;
     width: 50%;
     height: auto;
     z-index: 200;
@@ -370,6 +374,8 @@ h2:after {right: 0;}
 }
 
 .plan__list {
+    margin-left: 4rem;
+    width: 100%;
 }
 
 .list__item {
@@ -397,7 +403,7 @@ h2:after {right: 0;}
 
 .item__txt ul{
     padding: 0;
-    width: 100%;
+    width: 90%;
 }
 
 .item__txt ul li{
@@ -418,6 +424,7 @@ h2:after {right: 0;}
     margin: 0;
     font-family: "Source Han Serif";
     color: rgb(0, 0, 0);
+    width: 70%;
 
 }
 
@@ -428,6 +435,7 @@ h2:after {right: 0;}
     text-align: right;
     font-family: "Source Han Serif";
     color: rgb(230, 10, 51);
+    width: 30%;
 }
 
 .plantitle {
@@ -503,16 +511,31 @@ h2:after {right: 0;}
     position: absolute;
     left: 50%;
     top: 25%;
-    width: 50%;
-    height: 50%;
+    width: 32rem;
+    height: 60%;
     z-index: 1000;
     margin: 0;
     color: rgb(255, 255, 255);
+    background-color: rgb(81, 150, 23);
+    opacity: 0.71;
     font-size  = calc(ZZ + ((1vw - XX) * YY))
 }
 
+.app_pay_text {
+    margin-left: 8rem;
+}
+
+.app_pay_text img{
+    margin: 1px 0 1px 6rem;
+    width: 20rem;
+}
+
+.app_pay_text span{
+    margin-left: 7rem;
+}
+
 .shikin_right_bg {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 2);
     z-index: 2000;
 }
 
@@ -732,6 +755,7 @@ h2:after {right: 0;}
     display: flex;
     width: 100%;
     text-align: center;
+    margin-left: 5rem;
 }
 
 
@@ -748,10 +772,16 @@ h2:after {right: 0;}
     position: relative;
 }
 
+.flow__item__txt ul li.flow__item__text__right {
+    margin-top :1rem;
+}
+
 .flow__img {
     width:100%;
     max-width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .step__img {
@@ -781,8 +811,8 @@ h2:after {right: 0;}
     padding-bottom: 2px;
     margin: 0 0 1rem 0rem;
     float: left;
-      font-family: "Ten Mincho Text";
-  color: rgb(134, 190, 14);
+    font-family: "Ten Mincho Text";
+    color: rgb(134, 190, 14);
 
 }
 
@@ -919,6 +949,7 @@ h2:after {right: 0;}
     display: flex;
     width: 100%;
     text-align: center;
+    margin-left: 10rem;
 }
 
 
@@ -1070,7 +1101,7 @@ footer {
         font-size: 1rem;
         position: absolute;
         left: 15%;
-        top: 15%;
+        top: 30%;
         width: 30%;
         height: 80%;
         z-index: 1000;
@@ -1114,5 +1145,22 @@ footer {
         font-family: "Ten Mincho Text";
         color: rgb(89, 151, 17);
         float: left;
+    }
+
+    .mvtextabsolute {
+        position: absolute;
+        font-size:1rem;
+        -webkit-transform:scale(0.5);
+        -moz-transform:scale(0.5);
+        -ms-transform:scale(0.5);
+        -o-transform:scale(0.5);
+        transform:scale(0.5);
+        top: -10%;
+        left: 0%;
+        width: 45%;
+    }
+
+    .shikinrightbox {
+        height: 70%;
     }
 }
