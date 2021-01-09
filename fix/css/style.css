@@ -100,15 +100,33 @@ h2:after {right: 0;}
 .tel {
     color: rgb(255, 255, 255);
     background-color: rgb(72, 145, 50);
-    height: 3rem;
+    height: 100%;
     margin-left: auto;
-    display:inline-block;
-    width: 30rem;
+    /*width: 100%;*/
+    width: 15rem;
+    padding: 0.5rem 0;
 }
 
-.tel ul li {
-    text-align: left;
+.tel ul {
+    margin: 0;
+    width: 90%;
+}
+
+.tel ul li{
     list-style: none;
+    margin: 0;
+}
+.tel ul li.tel__left{
+    /*text-align: left;*/
+    float: left;
+    margin: 0 2px 0 0;
+}
+
+tel ul li.tel__right {
+    width: 100%;
+    margin: 0 1rem;
+    padding: 0;
+
 }
 
 .telicon {
@@ -131,11 +149,50 @@ h2:after {right: 0;}
     color: rgb(255, 255, 255);
     background-color: rgb(134, 190, 14);
     height: 3rem;
-    margin-left: auto;
+    margin-left: 0;
+    padding: 1rem 0 0 0 ;
     display:inline-block;
-    width: 30rem;
+    width: 15rem;
 }
 
+
+.contact ul {
+    margin: 0;
+    width: 8rem;
+}
+
+.contact ul li{
+    list-style: none;
+    margin: 0;
+}
+
+.contact ul li.contact__left{
+    /*text-align: left;*/
+    float: left;
+    margin: 0 0 0 0;
+}
+
+.contact ul li.contact__left img{
+    width: 2rem;
+}
+
+contact ul li.contact__right {
+    width: 100%;
+    margin: 0 1rem;
+    padding: 0;
+
+}
+
+
+.tell__left {
+    width:20%;
+}
+
+.tell__right {
+    width:80%;
+    margin: 1rem;
+}
+kklll
 .telnum {
     font-size: 2rem;
     display:inline-block;
