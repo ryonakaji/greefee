@@ -281,6 +281,7 @@ h2:after {right: 0;}
   /*position: absolute;*/
   z-index: 100;
   display: inline-block;
+  margin: 0 0 1rem 0;
 }
 
 .mvtext1 {
@@ -297,31 +298,33 @@ h2:after {right: 0;}
   /*position: absolute;*/
     z-index: 200;
     letter-spacing: 0.5rem;
-    width: 10rem;
+    width: 8rem;
 
 }
 .mvtext3 {
   font-family: "Ten Mincho Text";
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
+  margin-top:5rem;
 }
 .mvtext4 {
   font-family: "HGSSoeiPresenceEB";
   color: rgb(72, 145, 50);
   background-color: rgb(255, 234, 0);
-  font-size: 3rem;
-  line-height: 3.5rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 
 }
 .mvtext5 {
   font-family: "Ten Mincho Text";
   color: rgb(255, 255, 255);
   font-size: 2rem;
+  margin: 2rem 0;
 }
 .mvtext6 {
   font-family: "Source Han Serif";
   color: rgb(255, 255, 255);
-
+  font-size: 1rem;
 }
 
 .infoabsolute {
@@ -372,7 +375,7 @@ h2:after {right: 0;}
 .list__item {
     background-color: white;
     /*width: 12rem;*/
-    height: 20rem;
+    height: 18rem;
     margin: 1rem;
     /*width: 20rem;*/
     width: calc(100%/6);/*←画像を横に4つ並べる場合*/
@@ -394,19 +397,17 @@ h2:after {right: 0;}
 
 .item__txt ul{
     padding: 0;
+    width: 100%;
 }
 
 .item__txt ul li{
     list-style: none;
     left: 0;
     text-align: left;
-    width: 14rem;
-    border-bottom: 0.5px solid rgb(230, 230, 230);;
+    width: 100%;
+    border-bottom: 0.5px solid rgb(230, 230, 230);
     padding-bottom: 2px;
     margin: 0 0 1rem 1rem;
-}
-
-.item__txt ul li p {
 }
 
 .ttl {
@@ -414,7 +415,7 @@ h2:after {right: 0;}
     font-size: 1rem;
     text-align: left;
     padding: 0 0 0 1rem;
-    margin:4rem 0;
+    margin: 0;
     font-family: "Source Han Serif";
     color: rgb(0, 0, 0);
 
@@ -423,12 +424,10 @@ h2:after {right: 0;}
 .money {
     height: 2rem;
     font-size: 1rem;
-    margin:0;
+    margin:1rem;
     text-align: right;
     font-family: "Source Han Serif";
     color: rgb(230, 10, 51);
-    position: absolute;
-    right: 4rem;
 }
 
 .plantitle {
