@@ -99,23 +99,41 @@ h2:after {right: 0;}
     height: 3rem;
     margin-left: auto;
     display:inline-block;
+    width: 30rem;
 }
 
-/*
+.tel ul li {
+    text-align: left;
+    list-style: none;
+}
+
 .telicon {
     height: 20px;
     width: auto;
-    float: left;
-    margin: 10px, 0, 20px, 0;
-    padding: 0;
+    /*float: left;*/
+    margin: 0, 0, 0, 2rem;
+    padding: 0, 0, 0, 2rem;
 }
-*/
 
-/*
+.mailicon {
+    /*height: 2px;*/
+    width: 20%;
+    /*float: left;*/
+    margin: 0, 0, 0, 2rem;
+    padding: 0, 0, 0, 2rem;
+}
+
+.contact {
+    color: rgb(255, 255, 255);
+    background-color: rgb(134, 190, 14);
+    height: 3rem;
+    margin-left: auto;
+    display:inline-block;
+    width: 30rem;
+}
+
 .telnum {
-    height: 4px;
-    width: auto;
-    font-size: 3px;
+    font-size: 2rem;
     display:inline-block;
     margin: 0;
     padding: 0;
@@ -125,12 +143,8 @@ h2:after {right: 0;}
     -o-transform:scale(0.7);
     transform:scale(0.7);
 }
-*/
 
-/*
 .telc {
-    height: 3px;
-    width: auto;
     font-size: 1px;
     clear: both;
     margin: 0;
@@ -141,7 +155,6 @@ h2:after {right: 0;}
     -o-transform:scale(0.5);
     transform:scale(0.5);
 }
-*/
 
 .telimg {
     height: 3rem;
@@ -179,10 +192,57 @@ h2:after {right: 0;}
 .mvtextabsolute {
     position: absolute;
     left: 2.5rem;
-    top: 5.5rem;
+    top: 12rem;
     width: 45%;
     height: auto;
     z-index: 200;
+}
+
+.mvtitle {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.388;
+  /*position: absolute;*/
+  z-index: 100;
+  display: inline-block;
+}
+
+.mvtext1 {
+  font-family: "Source Han Sans JP";
+  color: rgb(255, 255, 255);
+  /*position: absolute;*/
+    z-index: 200;
+    width: 10rem;
+  font-size: 2rem;
+}
+.mvtext2 {
+  font-family: "Refrigerator Deluxe";
+  color: rgb(255, 255, 255);
+  /*position: absolute;*/
+    z-index: 200;
+
+}
+.mvtext3 {
+  font-family: "Ten Mincho Text";
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+.mvtext4 {
+  font-family: "HGSSoeiPresenceEB";
+  color: rgb(72, 145, 50);
+  background-color: rgb(255, 234, 0);
+  font-size: 3rem;
+  line-height: 3.5rem;
+
+}
+.mvtext5 {
+  font-family: "Ten Mincho Text";
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+.mvtext6 {
+  font-family: "Source Han Serif";
+  color: rgb(255, 255, 255);
+
 }
 
 .infoabsolute {
