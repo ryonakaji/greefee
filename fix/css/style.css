@@ -101,7 +101,7 @@ h2:after {right: 0;}
 .tel {
     color: rgb(255, 255, 255);
     background-color: rgb(72, 145, 50);
-    margin-left: auto;
+    /*margin-left: auto;*/
     /*width: 100%;*/
     width: 14rem;
     height: 3rem;
@@ -236,11 +236,11 @@ h2:after {right: 0;}
 .telimg {
     height: 3rem;
     width: auto;
-    margin-left: auto;
+    /*margin-left: auto;*/
 }
 
 .contactimg {
-    margin-left: auto;
+    /*margin-left: auto;*/
     margin:0;
     padding: 0;
     height: 3rem;
@@ -374,7 +374,7 @@ h2:after {right: 0;}
 }
 
 .plan__list {
-    margin-left: 4rem;
+    /*margin-left: 4rem;*/
     width: 100%;
 }
 
@@ -496,8 +496,7 @@ h2:after {right: 0;}
     width: 30%;
     height: 80%;
     z-index: 1000;
-    margin: 0;
-    padding: 0;
+    padding-top: 20rem;
     color: rgb(255, 255, 255);
     font-size  = calc(ZZ + ((1vw - XX) * YY))
 }
@@ -758,7 +757,7 @@ h2:after {right: 0;}
     display: flex;
     width: 100%;
     text-align: center;
-    margin-left: 5rem;
+    /*margin-left: 5rem;*/
 }
 
 
@@ -952,7 +951,7 @@ h2:after {right: 0;}
     display: flex;
     width: 100%;
     text-align: center;
-    margin-left: 10rem;
+    /*margin-left: 10rem;*/
 }
 
 
@@ -960,7 +959,7 @@ h2:after {right: 0;}
     background-color: white;
     border-radius: 5px;
     /*width: 12rem;*/
-    height: 100%;
+    height: auto;
     margin: 1rem;
     /*width: 20rem;*/
     width: calc(100%/4);/*←画像を横に4つ並べる場合*/
@@ -1008,9 +1007,9 @@ h2:after {right: 0;}
     /*margin: 1rem 1rem 1rem 1rem;*/
     /*margin: 5rem 1rem 0 0;*/
     float: left;
-        font-family: "Noto Sans CJK JP";
-  color: rgb(255, 255, 255);
-   text-align: center;
+    font-family: "Noto Sans CJK JP";
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .voice__list__item ul li.voice__item__up__text{
@@ -1265,6 +1264,28 @@ footer {
     .app_pay_text span{
         margin-left: 5rem;
         font-size: 2rem;
+    }
+
+    .voice__list__item ul li{
+        clear: both;
+    }
+
+    .voice__item__up__text {
+        margin: 0.5rem 0 0.5rem 2rem;
+    }
+
+    .flow__list__item {
+        background-color: white;
+        /*width: 12rem;*/
+        height: 100%;
+        margin: 1rem;
+        /*width: 20rem;*/
+        width: calc(100%/3);/*←画像を横に4つ並べる場合*/
+        /*width: calc(100%/2);*//*←画像を横に4つ並べる場合*/
+        padding:0;/*←画像の左右に5pxの余白を入れる場合*/
+        box-sizing:border-box;
+        float: left;
+        position: relative;
     }
 
 }
