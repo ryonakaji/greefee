@@ -584,12 +584,13 @@ h2:after {right: 0;}
 
 .introduceli {
     padding: 1rem 0 1rem 0;
-    margin: 1rem 0 1rem 12rem;
+    margin: 1rem 0 1rem 0;
     float: left;
-    width: 25rem;
+    width: 35rem;
     font-family: "Utopia Std";
     color: rgb(129, 188, 50);
-    font-size:2rem;
+    line-height: 80%;
+    font-size:3rem;
 }
 
 .introduceul ul{
@@ -621,12 +622,14 @@ h2:after {right: 0;}
 .introducetext {
   font-family: "YuGothic";
   color: rgb(46, 46, 46);
-  font-size:10px;
+  font-size:1rem;
     -webkit-transform:scale(0.5);
     -moz-transform:scale(0.5);
     -ms-transform:scale(0.5);
     -o-transform:scale(0.5);
     transform:scale(0.5);
+    line-height: 150%;
+  width: 25rem;
 }
 
 .napoleon {
@@ -1100,8 +1103,8 @@ footer {
     .shikinabsolute {
         font-size: 1rem;
         position: absolute;
-        left: 15%;
-        top: 30%;
+        left: 10%;
+        top: 10%;
         width: 30%;
         height: 80%;
         z-index: 1000;
@@ -1155,12 +1158,113 @@ footer {
         -ms-transform:scale(0.5);
         -o-transform:scale(0.5);
         transform:scale(0.5);
-        top: -10%;
-        left: 0%;
-        width: 45%;
+        top: -15%;
+        left: -15%;
+        width: 75%;
     }
 
     .shikinrightbox {
-        height: 70%;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 35%;
+        top: -40%;
+        width: 35rem;
+        height: 30rem;
+        z-index: 1000;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        background-color: rgb(81, 150, 23);
+        opacity: 0.71;
+        font-size  = calc(ZZ + ((1vw - XX) * YY))
+        -webkit-transform:scale(0.5);
+        -moz-transform:scale(0.5);
+        -ms-transform:scale(0.5);
+        -o-transform:scale(0.5);
+        transform:scale(0.5);
     }
+
+   .logoabsolute {
+       position: absolute;
+       left: 1rem;
+       top: 1rem;
+       width: 50%;
+       height: auto;
+       z-index: 200;
+         font-family: "Noto Sans CJK JP";
+     color: rgb(255, 255, 255);
+     font-size: 2rem;
+   
+   }
+
+    .telc {
+        display:none;
+    }
+
+
+    .contact ul li.contact__right {
+        width: 100%;
+        margin: 0 1rem;
+        padding: 0;
+        font-size: 1px;
+    }
+
+    .contact ul li.contact__left img{
+        width: 12px;
+        margin-top: 0.3rem;
+        /*margin-top: 0.5rem;*/
+    }
+    
+    .telnum{
+        display:none;
+    }
+
+    .contact__right{
+        display:none;
+    }
+
+    .tel {
+        width: 4rem;
+    }
+
+    .contact {
+        width: 4rem;
+    }
+
+    .tel ul li.tel__left{
+        margin: 0;
+        padding: 0;
+    }
+
+    .plan {
+        height: 80rem;
+    }
+    
+    .list__item {
+        background-color: white;
+        /*width: 12rem;*/
+        height: 18rem;
+        margin: 1rem;
+        /*width: 20rem;*/
+        width: calc(100%/3);/*←画像を横に4つ並べる場合*/
+        padding:0;/*←画像の左右に5pxの余白を入れる場合*/
+        box-sizing:border-box;
+        float: left;
+        position: relative;
+    }
+
+
+    .app_pay_text {
+        margin-left: 4rem;
+        font-size: 3rem;
+    }
+    .app_pay_text img{
+        margin: 2rem 0 2rem 5rem;
+        width: 25rem;
+    }
+    
+    .app_pay_text span{
+        margin-left: 5rem;
+        font-size: 2rem;
+    }
+
 }
