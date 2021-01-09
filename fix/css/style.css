@@ -39,8 +39,7 @@ h2 voice_title {
 h2 shikin_right_title {
     /*width*/
 }
-
-h2:after{
+.app_pay_title:after{
 content: '';
 position: absolute;
 top: 50%;
@@ -55,7 +54,7 @@ height: 2px;
 transform: rotate(-60deg);
 }
 
-h2:before{
+.app_pay_title:before{
 content: '';
 position: absolute;
 top: 50%;
@@ -70,8 +69,79 @@ height: 2px;
 transform: rotate(60deg);
 }
 
+
+
+
+
+
+.voice_title:after{
+content: '';
+position: absolute;
+top: 50%;
+display: inline-block;
+width: 44px;
+height: 2px;
+    background-color: rgb(255, 255, 0);
+    font-family: "Utopia Std";
+-moz-transform: rotate(-60deg);
+-webkit-transform: rotate(-60deg);
+-ms-transform: rotate(-60deg);
+transform: rotate(-60deg);
+}
+
+.voice_title:before{
+content: '';
+position: absolute;
+top: 50%;
+display: inline-block;
+width: 44px;
+height: 2px;
+    background-color: rgb(255, 255, 0);
+    font-family: "Utopia Std";
+-moz-transform: rotate(60deg);
+-webkit-transform: rotate(60deg);
+-ms-transform: rotate(60deg);
+transform: rotate(60deg);
+}
+.flow_title:after{
+content: '';
+position: absolute;
+top: 50%;
+display: inline-block;
+width: 44px;
+height: 2px;
+    background-color: rgb(89, 151, 17);
+    font-family: "Utopia Std";
+-moz-transform: rotate(-60deg);
+-webkit-transform: rotate(-60deg);
+-ms-transform: rotate(-60deg);
+transform: rotate(-60deg);
+}
+
+.flow_title:before{
+content: '';
+position: absolute;
+top: 50%;
+display: inline-block;
+width: 44px;
+height: 2px;
+    background-color: rgb(89, 151, 17);
+    font-family: "Utopia Std";
+-moz-transform: rotate(60deg);
+-webkit-transform: rotate(60deg);
+-ms-transform: rotate(60deg);
+transform: rotate(60deg);
+}
+
 h2:before {left:0;}
 h2:after {right: 0;}
+
+.voice_title:before {left:0;}
+.voice_title:after {right: 0;}
+.flow_title:before {left:0;}
+.flow_title:after {right: 0;}
+.app_pay_title:before {left:0;}
+.app_pay_title:after {right: 0;}
 
 /*mv class*/
 .mv {
@@ -101,7 +171,7 @@ h2:after {right: 0;}
 .tel {
     color: rgb(255, 255, 255);
     background-color: rgb(72, 145, 50);
-    /*margin-left: auto;*/
+    margin-left: auto;
     /*width: 100%;*/
     width: 14rem;
     height: 3rem;
@@ -175,7 +245,8 @@ h2:after {right: 0;}
 .contact ul li.contact__left{
     /*text-align: left;*/
     float: left;
-    margin: 0 0 0 0;
+    margin: 0 0 0 -0.8rem;
+    overflow: hidden;
 }
 
 .contact ul li.contact__left img{
@@ -343,6 +414,7 @@ h2:after {right: 0;}
     display:flex;
     right: 0px;
     top: 0px;
+    overflow: hidden;
 }
 
 .logoabsolute {
@@ -381,7 +453,8 @@ h2:after {right: 0;}
 .list__item {
     background-color: white;
     /*width: 12rem;*/
-    height: 18rem;
+    height: 100%;
+    /*height: 18rem;*/
     margin: 1rem;
     /*width: 20rem;*/
     width: calc(100%/6);/*←画像を横に4つ並べる場合*/
@@ -492,7 +565,7 @@ h2:after {right: 0;}
     font-size: 1.5rem;
     position: absolute;
     left: 15%;
-    top: 40%;
+    top: -30%;
     width: 30%;
     height: 80%;
     z-index: 1000;
@@ -757,6 +830,7 @@ h2:after {right: 0;}
     display: flex;
     width: 100%;
     text-align: center;
+    display: inline-block;
     /*margin-left: 5rem;*/
 }
 
@@ -889,7 +963,7 @@ h2:after {right: 0;}
     border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
 }
 
-.flow_text1 {
+.flow_title {
     margin: 40px 0, 0;
     padding: 0;
     color: rgb(89, 151, 17);
@@ -950,6 +1024,7 @@ h2:after {right: 0;}
 .voice__list {
     display: flex;
     width: 100%;
+    display: inline-block;
     text-align: center;
     /*margin-left: 10rem;*/
 }
@@ -1102,8 +1177,8 @@ footer {
     .shikinabsolute {
         font-size: 1rem;
         position: absolute;
-        left: 10%;
-        top: 10%;
+        left: 15%;
+        top: 25%;
         width: 30%;
         height: 80%;
         z-index: 1000;
@@ -1157,7 +1232,7 @@ footer {
         -ms-transform:scale(0.5);
         -o-transform:scale(0.5);
         transform:scale(0.5);
-        top: -15%;
+        top: -5%;
         left: -15%;
         width: 75%;
     }
@@ -1165,7 +1240,7 @@ footer {
     .shikinrightbox {
         font-size: 1.5rem;
         position: absolute;
-        left: 35%;
+        left: 30%;
         top: -40%;
         width: 35rem;
         height: 30rem;
@@ -1230,25 +1305,32 @@ footer {
     }
 
     .tel ul li.tel__left{
-        margin: 0;
+        margin: -0.5rem 0 0 -0.7rem;
+        overflow: hidden;
         padding: 0;
     }
 
     .plan {
-        height: 80rem;
+        height: 100rem;
+        float: center;
+    }
+    
+    .plan__list {
+        display: inline-block;
     }
     
     .list__item {
         background-color: white;
         /*width: 12rem;*/
-        height: 18rem;
+        height: 100%;
         margin: 1rem;
         /*width: 20rem;*/
-        width: calc(100%/3);/*←画像を横に4つ並べる場合*/
+        width: calc(100%/2);/*←画像を横に4つ並べる場合*/
         padding:0;/*←画像の左右に5pxの余白を入れる場合*/
         box-sizing:border-box;
         float: left;
         position: relative;
+        margin: 1rem auto;
     }
 
 
@@ -1267,11 +1349,11 @@ footer {
     }
 
     .voice__list__item ul li{
-        clear: both;
+        /*clear: both;*/
     }
 
     .voice__item__up__text {
-        margin: 0.5rem 0 0.5rem 2rem;
+        margin: 5rem 0 0 1rem;
     }
 
     .flow__list__item {
@@ -1280,12 +1362,134 @@ footer {
         height: 100%;
         margin: 1rem;
         /*width: 20rem;*/
-        width: calc(100%/3);/*←画像を横に4つ並べる場合*/
+        width: calc(150%/2);/*←画像を横に4つ並べる場合*/
         /*width: calc(100%/2);*//*←画像を横に4つ並べる場合*/
         padding:0;/*←画像の左右に5pxの余白を入れる場合*/
         box-sizing:border-box;
         float: left;
         position: relative;
+        margin: 1rem 13%;
     }
 
+    .voice__item__up__img {
+    }
+
+    .voice__list__item {
+        background-color: white;
+        border-radius: 5px;
+        /*width: 12rem;*/
+        height: auto;
+        /*width: 20rem;*/
+        width: calc(150%/2);/*←画像を横に4つ並べる場合*/
+        padding:0;/*←画像の左右に5pxの余白を入れる場合*/
+        box-sizing:border-box;
+        float: left;
+        position: relative;
+        margin: 1rem 13%;
+    }
+
+
+    .voice__list__item ul li {
+        float: left;
+    }
+
+    h2 .voice_title {
+        width: 100%;
+        margin: 0 0 0 -3rem;
+    }
+
+    h2 .flow_title {
+        width: 100%;
+        margin: 0 0 0 -3rem;
+    }
+
+    h2{
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+        margin: 40px 0, 0;
+        color: rgb(255, 255, 0);
+        font-family: "Utopia Std";
+    }
+
+    .voice_title:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+        background-color: rgb(255, 255, 0);
+        font-family: "Utopia Std";
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+        margin: 0 0 0 -3rem;
+    }
+    
+    .voice_title:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+        background-color: rgb(255, 255, 0);
+        font-family: "Utopia Std";
+    -moz-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+        margin: 0 0 0 -3rem;
+    }
+
+    .flow_title:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+    background-color: rgb(89, 151, 17);
+        font-family: "Utopia Std";
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+        margin: 0 0 0 -3rem;
+    }
+    
+    .flow_title:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+    background-color: rgb(89, 151, 17);
+        font-family: "Utopia Std";
+    -moz-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+        margin: 0 0 0 -3rem;
+    }
+
+    .flow__list {
+
+    }
 }
+/*
+@media screen and (max-width: 720px) {
+
+    .shikinrightbox {
+        font-size: 1.5rem;
+        position: absolute;
+        left: 40%;
+        top: -40%;
+        width: 35rem;
+        height: 30rem;
+    }
+}
+*/
