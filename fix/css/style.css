@@ -655,10 +655,10 @@ h2:after {right: 0;}
 .flow__list__item {
     background-color: white;
     /*width: 12rem;*/
-    height: 20rem;
+    height: 100%;
     margin: 1rem;
     /*width: 20rem;*/
-    width: calc(100%/6);/*←画像を横に4つ並べる場合*/
+    width: calc(100%/5);/*←画像を横に4つ並べる場合*/
     padding:0;/*←画像の左右に5pxの余白を入れる場合*/
     box-sizing:border-box;
     float: left;
@@ -671,25 +671,59 @@ h2:after {right: 0;}
     height: auto;
 }
 
+.step__img {
+    width:10%;
+    max-width: 25%;
+    height: auto;
+}
+
 .flow__item__img {
     /*width: calc(100%/6);*//*←画像を横に4つ並べる場合*/
+    width: 20%;
+    height: auto;
 }
 
 .flow__item__txt ul{
     padding: 0;
+    overflow: hidden;
+    display: inline;
 }
 
 .flow__item__txt ul li{
     list-style: none;
     left: 0;
     text-align: left;
-    width: 14rem;
-    border-bottom: 0.5px solid rgb(230, 230, 230);;
+    /*width: 14rem;*/
+    /*border-bottom: 0.5px solid rgb(230, 230, 230);*/
     padding-bottom: 2px;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 1rem 0rem;
+    float: left;
+      font-family: "Ten Mincho Text";
+  color: rgb(134, 190, 14);
+
 }
 
+.flow__item__txt ul li span{
+  color: rgb(0, 0, 0);
+}
+
+.flow__item__txt ul li img{
+    width:75%;
+    max-width: 75%;
+    height: auto;
+    margin: 1rem 0 0 0;
+ }
+
 .flow__item__txt ul li p {
+}
+
+
+.flow__item__text__right {
+    width: 70%;
+    margin: 0;
+    font-family: "YuGothic";
+    color: rgb(0, 0, 0);
+
 }
 
 .ttl {
