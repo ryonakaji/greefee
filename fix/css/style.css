@@ -36,6 +36,10 @@ h2 voice_title {
     voice color: rgb(255, 210, 53);
 }
 
+h2 shikin_right_title {
+    /*width*/
+}
+
 h2:after{
 content: '';
 position: absolute;
@@ -402,7 +406,7 @@ h2:after {right: 0;}
     font-size: 1.5rem;
     position: absolute;
     left: 15%;
-    top: 25%;
+    top: 40%;
     width: 30%;
     height: 80%;
     z-index: 1000;
@@ -416,7 +420,27 @@ h2:after {right: 0;}
     font-size:0.5rem
 }
 
+.shikinrightbox {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 1000;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size  = calc(ZZ + ((1vw - XX) * YY))
+}
 
+.shikin_right_bg {
+  background-color: rgb(255, 255, 255);
+    z-index: 2000;
+}
+
+.shikin_right_img {
+    width: 40%;
+}
 /*introduce class*/
 .introduce {
     position: relative;
@@ -625,6 +649,76 @@ h2:after {right: 0;}
     height: auto;
     font-size: 1.2rem;
 }
+
+
+
+.flow__list__item {
+    background-color: white;
+    /*width: 12rem;*/
+    height: 20rem;
+    margin: 1rem;
+    /*width: 20rem;*/
+    width: calc(100%/6);/*←画像を横に4つ並べる場合*/
+    padding:0;/*←画像の左右に5pxの余白を入れる場合*/
+    box-sizing:border-box;
+    float: left;
+    position: relative;
+}
+
+.flow__img {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.flow__item__img {
+    /*width: calc(100%/6);*//*←画像を横に4つ並べる場合*/
+}
+
+.flow__item__txt ul{
+    padding: 0;
+}
+
+.flow__item__txt ul li{
+    list-style: none;
+    left: 0;
+    text-align: left;
+    width: 14rem;
+    border-bottom: 0.5px solid rgb(230, 230, 230);;
+    padding-bottom: 2px;
+    margin: 0 0 1rem 1rem;
+}
+
+.flow__item__txt ul li p {
+}
+
+.ttl {
+    height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 0 0 1rem;
+    margin:4rem 0;
+    font-family: "Source Han Serif";
+    color: rgb(0, 0, 0);
+
+}
+
+.money {
+    height: 2rem;
+    font-size: 1rem;
+    margin:0;
+    text-align: right;
+    font-family: "Source Han Serif";
+    color: rgb(230, 10, 51);
+    position: absolute;
+    right: 4rem;
+}
+
+
+
+
+
+
 
 .flowul {
     display: flex;
