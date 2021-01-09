@@ -836,6 +836,116 @@ h2:after {right: 0;}
     font-family: "Ten Mincho Text";
 }
 
+
+.voice__list {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+
+.voice__list__item {
+    background-color: white;
+    border-radius: 5px;
+    /*width: 12rem;*/
+    height: 100%;
+    margin: 1rem;
+    /*width: 20rem;*/
+    width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+    padding:0;/*←画像の左右に5pxの余白を入れる場合*/
+    box-sizing:border-box;
+    float: left;
+    position: relative;
+}
+
+.voice__img {
+}
+
+.voice__item__up__img {
+    width: 30%;
+    padding: 1rem 0 0 1rem;
+    background-color: transparent;
+}
+/*
+.step__img {
+    width:10%;
+    max-width: 25%;
+    height: auto;
+}
+*/
+.voice__item__img {
+    /*width: calc(100%/6);*//*←画像を横に4つ並べる場合*/
+    width: 20%;
+    height: auto;
+}
+
+.voice__list__item ul{
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    list-style: none;
+}
+
+.voice__list__item ul li{
+    list-style: none;
+    left: 0;
+    text-align: left;
+    /*width: 14rem;*/
+    /*border-bottom: 0.5px solid rgb(230, 230, 230);*/
+    /*padding-bottom: 2px;*/
+    /*margin: 1rem 1rem 1rem 1rem;*/
+    /*margin: 5rem 1rem 0 0;*/
+    float: left;
+        font-family: "Noto Sans CJK JP";
+  color: rgb(255, 255, 255);
+   text-align: center;
+}
+
+.voice__list__item ul li.voice__item__up__text{
+    /*height: 50px;*/
+}
+
+.voice__item__up__text {
+        background-color: rgb(89, 151, 17);
+    margin: 4rem 0 0 1rem;
+    font-size: 16px;
+    padding: 0 4px;
+    }
+
+.voice__item__txt {
+    clear: both;
+      background-color: rgb(245, 245, 245);
+      padding: 1rem;
+      margin: 1rem;
+
+
+}
+
+/*
+.voice__item__txt ul li span{
+  color: rgb(0, 0, 0);
+}
+*/
+/*
+.voice__item__txt ul li img{
+    width:75%;
+    max-width: 75%;
+    height: auto;
+    margin: 1rem 0 0 0;
+ }
+
+.voice__item__txt ul li p {
+}
+*/
+
+.voice__item__text__right {
+    width: 70%;
+    margin: 0;
+    font-family: "YuGothic";
+    color: rgb(0, 0, 0);
+
+}
+
 /*
 .greegbb {
     position: absolute;
